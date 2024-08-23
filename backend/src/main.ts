@@ -9,6 +9,12 @@ async function bootstrap() {
   const port = process.env.HTTP_PORT || 3001;
   app.setGlobalPrefix('api');
 
+  app.enableCors({
+    origin: 'http://localhost:3000', // Replace with your frontend's URL
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
+    credentials: true,
+  });
+
   // Swagger setup
   const config = new DocumentBuilder()
     .setTitle('User & Auth API')
