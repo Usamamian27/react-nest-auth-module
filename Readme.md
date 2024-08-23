@@ -42,7 +42,7 @@ npm run dev
 
 5. Accessing the Application
    Frontend: Open your browser and go to http://localhost:3000.
-   Backend API Documentation (Swagger): Access the Swagger documentation at http://localhost:300/api.
+   Backend API Documentation (Swagger): Access the Swagger documentation at http://localhost:3001/api.
 
 Additional Scripts
 Start Backend Only: npm run start:backend
